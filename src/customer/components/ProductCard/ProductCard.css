@@ -1,0 +1,30 @@
+.productCard {
+    transition: box-shadow .3s ease-out;
+    overflow: hidden;
+}
+
+.productCard .textPart {
+    transition: transform .3s ease-out;
+}
+
+.productCard:hover .textPart {
+    transform: translateY(-1rem);
+}
+
+.productCard:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.productCard img {
+    width: 100%;
+    height: 15rem;
+    /* Set a fixed height */
+    object-fit: cover;
+    /* Ensure the image covers the entire area */
+    object-position: top;
+    /* Align the image to the top */
+}
